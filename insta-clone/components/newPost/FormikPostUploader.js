@@ -12,7 +12,7 @@ const PLACEHOLDER_IMG =
 const uploadPostSchema = yup.object().shape({
   imageUrl: yup.string().url().required("A url is required"),
   caption: yup.string().max(2200, "caption has reached the character limit."),
-});
+}); 
 
 const FormikPostUploader = () => {
   const [thumbnailUrl, setThumbnailUrl] = useState(PLACEHOLDER_IMG);
